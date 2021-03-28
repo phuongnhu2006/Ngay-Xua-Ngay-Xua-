@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{font-family: Heading;
+src:url(../font/SVN-Wallington.ttf);}
+div
+{font-family: Heading;}
+
+h1
+{color:white;
+font-family: Heading;
+src:url(../font/SVN-Wallington.ttf);	}
+
+body
+{color:white;}
+
+html 
+{scroll-behavior: smooth;}
+
+.container-fluid
+{height: auto;
+background-color: #215752;}
+
+.homepage
+{height: 650px;
+position: relative;}
+
+.logo
+{position: fixed;
+top: 2%;
+left: 2%;}
+
+.nen
+{position: fixed;
+background-color: #293D3B;}
+
+.navigation
+{height: 50px;
+background-color: #293D3B;
+padding: 6px;}
+
+/*  NAVIGATION EFFECT  */
+
+ul
+{list-style: none;}
+
+ul li
+{padding: 10px 40px 10px 40px;
+float: left;}
+
+ul li a
+{text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a, a:hover, a:active, a:visited { color: white; }
+
+a.effect-box:after,
+a.effect-box:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	color: white;
+	
+}
+
+a.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+	transform: scale(1,0);
+		color: white;
+
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	border-radius: 10px;
+		color: white;
+
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(2);
+	transform: scale(2);
+	border-radius: 10px;
+	color: white;	
+}
+
+
+.mieuta
+{height: 650px;
+display: flex;
+justify-content: center;
+font-family: Roboto;
+	src:url(../font/Roboto-Medium_1.ttf);
+margin: 20px;}
+
+.minhhoa
+{height: 650px;
+display: flex;
+justify-content: center;}
+
+.button
+{background-color: #215752;
+width: 150px;
+color: white; 
+border: 1px solid #FFFFFF;
+margin-top: 20px;
+border-radius:40px;
+padding: 10px;
+text-align: center;
+font-family: Roboto;
+	src:url(../font/Roboto-Light_1.ttf);}
+
+.button:before {
+  height: 0%;
+  width: 2px;
+}
+.button:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.button2
+{background-color: #215752;
+position: absolute;
+width: 150px;
+color: white; 
+border: 1px solid #FFFFFF;
+margin-top: 20px;
+border-radius:40px;
+padding: 10px;
+text-align: center;
+font-family: Roboto;
+	src:url(../font/Roboto-Light_1.ttf);}
+
+.button2:before {
+  height: 0%;
+  width: 2px;
+}
+.button2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+.nenn
+{height: 959px;
+ background-image: url("../img/BANNER-01 (1).jpg");}
+
+.button3
+{background-color: #215752;
+position: absolute;
+width: 300px;
+color: white; 
+border: 1px solid #FFFFFF;
+margin-top: 20px;
+border-radius:40px;
+padding: 10px;
+text-align: center;
+font-family: Roboto;
+	src:url(../font/Roboto-Light_1.ttf);
+top: 90%;
+left: 40%;}
+
+.button3:before {
+  height: 0%;
+  width: 2px;
+}
+.button3:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.loa
+{position: absolute;
+top: 7%;
+left: 1%;
+  cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EEEFC4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #b0c632;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
